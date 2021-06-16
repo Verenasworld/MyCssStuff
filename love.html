@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textvideo</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="banner" onclick="navigateto()">
+  <video autoplay muted loop>
+    <source src="Couples%20-%201271.mp4">
+  </video>
+  <h2>LOVE</h2>
+</div>
+<div class="banner1">
+  <video autoplay muted loop>
+    <source src="Couples%20-%201271.mp4">
+  </video>
+  <h2>Party</h2>
+</div>
+
+<script>
+  window.addEventListener("scroll",function (){
+    const header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0)
+  })
+</script>
+
+</body>
+</html>
