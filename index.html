@@ -15,11 +15,17 @@
     <a href="party.html">PARTY</a>
     <p>|</p>
     <a href="nature.html">NATURE</a>
-
+<div class="cursor"></div>
 
 </div>
 
-
+<script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+    })
+</script>
 
 </body>
 </html>
