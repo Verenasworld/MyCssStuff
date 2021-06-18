@@ -15,6 +15,7 @@
     height: 100vh;
     overflow:hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 5vw;
@@ -58,6 +59,7 @@
     line-height: 100vh;
     mix-blend-mode: screen;
 }
+
 .cursor{
     position: fixed;
     width: 20px;
