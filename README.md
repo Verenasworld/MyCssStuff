@@ -6,3 +6,5 @@ mix-blend-mode screen
 
 
 # videotext
+tutorial with 
+https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog
