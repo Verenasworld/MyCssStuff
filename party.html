@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Textvideo</title>
     <link rel="stylesheet" href="index.css">
+
 </head>
 
-<body>
+<body class="party">
 
 
 <div class="banner">
@@ -16,6 +17,21 @@
     </video>
     <h2>Party</h2>
 </div>
+<div class="cursor1"></div>
+
+<script type="text/javascript">
+    const cursor1 = document.querySelector(".cursor1");
+    document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+
+        cursor1.style.top = y + "px";
+        cursor1.style.left = x + "px";
+
+
+    })
+
+</script>
 
 <script>
     window.addEventListener("scroll",function (){
