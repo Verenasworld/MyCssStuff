@@ -28,6 +28,8 @@
 
 }
 
+
+
 .banner{
     position: absolute;
     width: 100%;
@@ -60,6 +62,13 @@
     line-height: 100vh;
     mix-blend-mode: multiply;
 }
+#first.banner h2 {
+    background: rgb(255,255,255);
+    color: black;
+    mix-blend-mode: screen;
+    font-size: 30vw;
+}
+
 
 .cursor{
     position: fixed;
