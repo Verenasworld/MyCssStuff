@@ -36,14 +36,16 @@ header{
 }
 
 header .logo{
+    font-family: 'Dancing Script', cursive;
     position: relative;
-    font-size: 2em;
+    font-size: 4em;
     color: white;
-    text-transform: uppercase;
+
     font-weight: 700;
     text-decoration: none;
     text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
     transition: 0.5s;
+    text-decoration-line: underline;
    
 }
 
@@ -138,7 +140,7 @@ section .content h2 span {
     font-size: 0.2em;
     font-weight: 300;
     letter-spacing: 5px;
-    background: #fff;
+    background:rgba(255, 255, 255, 0.5);
     color: #111;
     padding: 10px 20px;
     text-shadow: 0 5px 5px rgba(0,0,0,0.1);
@@ -152,4 +154,34 @@ bottom: 40px;
 right: 100px;
 display: flex;
 z-index: 100;
+}
+
+
+section.active .smi li {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+}
+
+section .smi li {
+    list-style: none;
+    margin: 5px;
+    padding: 10px 25px;
+    background:rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    transition-delay: calc(0.2s * var(--i));
+    color: #111;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 15px;
+}
+section .smi li a{
+    text-decoration: none;
+    color: #111;
+    opacity: 1;
+   
+   
 }
