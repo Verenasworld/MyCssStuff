@@ -1,9 +1,16 @@
 body{
-    margin: 0;
-    padding: 0;
+   
     background: #262626;
     font-family: 'Arial', sans-serif;
     font-weight: 900;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 
 .loader{
@@ -13,16 +20,20 @@ body{
     transform: translate(-50%, -50%) ;
 }
 .loader h1 {
+
     margin: 0;
-    padding: 0;
+    height: auto;
     text-transform: uppercase;
     font-size: 20em;
     color: rgba(255,255,255,.1);
-    background-image: url("fischinew.png");
+    background-image: url("media/fischinew.png");
     background-repeat: repeat-x;
     -webkit-background-clip: text;
     animation: animate 15s linear infinite;
 }
+
+
+
 
 @keyframes animate {
     0%{
