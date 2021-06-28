@@ -11,13 +11,19 @@
 <section>
     <header>
         <a href="#" class="logo">Honeymoon</a>
-        <div class="toggle"></div>
+        <div class="toggle"onclick="menuToggle()"></div>
     </header>
     <video src="media/Couples - 1271.mp4" autoplay muted loop></video>
 </section>
 
 
-
+<script type="text/javascript">
+function menuToggle(){
+  const toggleMenu = document.querySelector('.toggle');
+  toggleMenu.classList.toggle('active');
+}
+  
+</script>
 
 </body>
 </html>
