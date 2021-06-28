@@ -61,6 +61,7 @@
     background: #000;
     line-height: 100vh;
     mix-blend-mode: multiply;
+    cursor: pointer;
 }
 #first.banner h2 {
     background: rgb(255,255,255);
