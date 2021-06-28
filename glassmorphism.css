@@ -185,3 +185,52 @@ section .smi li a{
    
    
 }
+
+ section .navi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    
+}
+section .navi li {
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(200px);
+    transition-delay: calc(0.2s * var(--i));
+    
+}
+
+section.active .navi li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+   
+
+}
+
+section .navi li a {
+    color: #111;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10%);
+    padding: 4px 10px;
+    display: inline-block;
+
+
+}
+
+section .navi li a:hover{
+    background-color: #111 ;
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+}
