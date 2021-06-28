@@ -60,6 +60,13 @@ header .toggle {
  justify-content: center;
  align-items: center;
 }
+header .toggle.active{
+    background: url(media/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 45px;
+}
 
 header .toggle:before{
     content: 'Menu';
