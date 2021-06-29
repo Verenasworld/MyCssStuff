@@ -18,6 +18,7 @@ mix-blend-mode difference
 mix-blend-mode screen 
 
 add svg txt and animate with @keyframes line-anim
+ media for responsive design ( CoktailPage) 
 
 
 
