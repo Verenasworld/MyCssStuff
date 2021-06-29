@@ -13,9 +13,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(0deg, #5affd6, #2ea8ff, #fc68dc);
+    background: linear-gradient(-45deg, #5affd6, #2ea8ff, #f87132,#fc68dc);
+    background-size: 400% 400%;
     background-attachment: fixed;
     min-height: 100vh;
+    animation: change  10s ease-in-out infinite;
 
 }
 
@@ -71,7 +73,7 @@ body{
 h3{
     font-family: 'Calligraffitti', cursive;
     font-size: 50px;
-    color: #fc68dc;
+    color: #fce168;
 }
 
 img{
@@ -155,4 +157,16 @@ img{
      border-radius: 20px;
      padding: 20px 50px 20px 50px;
  }
+}  
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+          background-position: 0 50%;
+      }
 }
