@@ -21,7 +21,7 @@ body{
 
 .container{
     position: relative;
-    width: 1200px;
+    width: 1100px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -124,6 +124,7 @@ img{
       flex-direction: column;
       background: transparent;
       margin: -20px 0;
+      box-shadow: none;
   }
   .container .card .imgdrink{
       position: relative;
@@ -141,11 +142,17 @@ img{
   }
   .container .card .imgdrink img,
   .container .card:hover .imgdrink img{
-      max-width: 100px;
+      max-width: 80%;
+      max-height: 100%;
+      
   }
  .container .card .content {
      position: relative;
      width: 100%;
      background: #fff;
+     box-shadow: none;
+     border-top: 100px solid #fff;
+     border-radius: 20px;
+     padding: 20px 50px 20px 50px;
  }
 }
