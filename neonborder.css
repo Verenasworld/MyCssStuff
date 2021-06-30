@@ -84,6 +84,7 @@ body{
     width: 50%;
     height: 100%;
     background: rgba(255,255,255,0.1);
+    filter: blur(10px);
     pointer-events: none;
 }
 
@@ -91,6 +92,15 @@ body{
     position: relative;
     z-index: 18;
     padding: 20px 40px;
+}
+
+.container .box .content img{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border-radius: 60%;
+    box-shadow: -10px -10px 5px rgb(0, 0, 0);
+    margin: 10px;
 }
 .container .box .content h2{
     font-family: 'Syne', sans-serif;
