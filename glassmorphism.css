@@ -73,7 +73,7 @@ header .toggle.active{
 }
 
 header .toggle:before{
-    content: 'Menu';
+    content: '';
     position: absolute;
     color: white;
     text-transform: uppercase;
@@ -83,7 +83,7 @@ header .toggle:before{
     padding: 2px 5px;
 }
 header .toggle.toggle.active:before{
-    content: 'close';
+    content: '';
 }
 
 section video{
@@ -163,28 +163,48 @@ section.active .smi li {
 }
 
 section .smi li {
-    list-style: none;
-    margin: 5px;
-    padding: 10px 25px;
+  
+    list-style: none; 
     background:rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     transition: 0.5s;
     transition-delay: calc(0.2s * var(--i));
     color: #111;
     cursor: pointer;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 5px;
+    
+    
    
-    font-size: 15px;
 }
 section .smi li a{
     text-decoration: none;
     color: #111;
     opacity: 1;
     font-weight: 200;
-   
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 1.5em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background 0.25s ;
 }
+
+section .smi li:nth-child(1) a:hover{
+    background: skyblue;
+}
+section .smi li:nth-child(2) a:hover{
+    background: rgb(68, 111, 250);
+}
+section .smi li:nth-child(3) a:hover{
+    background: rgb(38, 0, 255);
+}
+
+section .smi li a:hover
 
  section .navi{
     position: absolute;
