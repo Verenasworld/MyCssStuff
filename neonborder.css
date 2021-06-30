@@ -143,6 +143,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10%;
+    margin: 20px;
 }
 .circle{
     position: relative;
@@ -150,7 +152,18 @@ body{
     height: 100px;
     background: linear-gradient(#33ccff,#ff0066);
     border-radius: 50%;
+    animation: animate 0.5s linear infinite;
 }
+
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .circle:after{
     content: '';
     position: absolute;
@@ -169,4 +182,17 @@ body{
     height: 100%;
     background: linear-gradient(#33ccff,#ff0066);
     border-radius: 50%;
+}
+
+.circle div:nth-child(1){
+    filter: blur(5px);
+}
+.circle div:nth-child(2){
+    filter: blur(10px);
+}
+.circle div:nth-child(3){
+    filter: blur(20px);
+}
+.circle div:nth-child(4){
+    filter: blur(55px);
 }
