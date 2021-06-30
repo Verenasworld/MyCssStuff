@@ -182,7 +182,7 @@ section .smi li::before{
     color: rgba(255, 255, 255, 0.212);
     
     font-size: 10vw;
-    transform: translate(-70%,-120%);
+    transform: translate(-100%,-120%);
     pointer-events: none;
     font-weight: 700;
     transition: 0.5s;
@@ -191,7 +191,7 @@ section .smi li::before{
 
 section .smi li:hover::before{
     opacity: 0.8;
-    transform: translate(50%,calc(-50% +150px));
+    
 }
 section .smi li a{
     text-decoration: none;
