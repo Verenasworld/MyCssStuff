@@ -152,7 +152,7 @@ body{
     height: 100px;
     background: linear-gradient(#33ccff,#ff0066);
     border-radius: 50%;
-    animation: animate 0.5s linear infinite;
+    animation: animate 0.9s linear infinite;
 }
 
 @keyframes animate {
@@ -194,5 +194,5 @@ body{
     filter: blur(20px);
 }
 .circle div:nth-child(4){
-    filter: blur(55px);
+    filter: blur(30px);
 }
