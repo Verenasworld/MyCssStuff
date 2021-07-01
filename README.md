@@ -19,7 +19,6 @@ https://user-images.githubusercontent.com/51680972/123792429-e28b8380-d8e0-11eb-
 
 
 
-https://user-images.githubusercontent.com/51680972/123657042-bca6a600-d830-11eb-9fc7-65ba7e800a3f.mp4
 
 
 learning css tricks and many more inspiriert from 
