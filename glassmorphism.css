@@ -241,7 +241,7 @@ section .smi li a .fa{
 
 section .smi li a:hover .fa{
     color: #fff;
-    transform: scale(1.75) translateZ(50px);
+    transform: scale(1.5) translateZ(50px);
 }
 
  section .navi{
