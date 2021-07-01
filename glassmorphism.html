@@ -26,17 +26,17 @@
     
   <div class="socialMedia">
     <ul class="smi">
-      <li data-text="github" style="--i:1">
+      <li data-text="github"  style="--i:1">
         <a href="#">
           <i class="fa fa-github"></i>
         </a>
       </li>
-      <li data-text="instagram" style="--i:2">
+      <li data-text="instagram"  style="--i:2">
         <a href="#">
           <i class="fa fa-instagram"></i>
         </a>
       </li>
-      <li data-text="youtube" style="--i:3">
+      <li data-text="youtube"  style="--i:3">
         <a href="#">
           <i class="fa fa-youtube"></i>
         </a></li>
@@ -56,7 +56,7 @@
     </ul>
 
 </section>
-
+<script src="smi-tilt.js"></script>
 
 <script type="text/javascript">
 function menuToggle(){
@@ -69,7 +69,21 @@ function menuToggle(){
 </script>
 
 <script>
-  let list = document.querySelectorAll('.smi li')
+  VanillaTilt.init(document.querySelectorAll(" .smi li a"), {
+	  max: 25,
+	  speed: 400,
+    glare: true,
+    "max-glare":1,
+	});
+  let list = document.querySelectorAll('.smi li');
+  let bg = document.querySelector('.socialMedia');
+  list.forEach(elements => {
+    elements.addEventListener('mouseenter' , function (event){
+      let color = event.target.getAttribute('data-color');
+      bg.style.backgroundColor = color;
+    })
+  })
+
 </script>
 
 </body>

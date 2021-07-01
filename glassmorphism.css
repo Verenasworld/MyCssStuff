@@ -147,6 +147,8 @@ section .content h2 span {
     text-transform: uppercase;
 }
 
+
+
 section .smi{
 position: absolute;
 bottom: 40px;
@@ -160,12 +162,13 @@ section.active .smi li {
     opacity: 0;
     visibility: hidden;
     transform: translateY(100px);
+    
 }
 
 section .smi li {
   
     list-style: none; 
-    background:rgba(255, 255, 255, 0.2);
+    
     backdrop-filter: blur(10px);
     transition: 0.5s;
     transition-delay: calc(0.2s * var(--i));
@@ -173,13 +176,14 @@ section .smi li {
     cursor: pointer;
     border-radius: 10px;
     margin: 5px;
+   
 }
 
 section .smi li::before{
     content: attr(data-text);
     position: absolute;
     top: 20px;
-    color: rgba(255, 255, 255, 0.212);
+    color: rgba(255, 255, 255, 0.2);
     
     font-size: 10vw;
     transform: translate(-100%,-120%);
@@ -187,13 +191,16 @@ section .smi li::before{
     font-weight: 700;
     transition: 0.5s;
     opacity: 0;
+   
 }
 
 section .smi li:hover::before{
     opacity: 0.8;
+   
     
 }
 section .smi li a{
+    background:rgba(255, 255, 255, 0.2);
     text-decoration: none;
     color: #111;
     opacity: 1;
@@ -201,17 +208,24 @@ section .smi li a{
     display: flex;
     justify-content: center;
     align-items: center;  
-    font-size: 1.5em;
+    font-size: 1.8em;
     transform-style: preserve-3d;
     perspective: 500px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 10px;
     transition: background 0.25s ;
+   
+}
+
+.js-tilt-glare{
+    border-radius: 10px;
+    
 }
 
 section .smi li:nth-child(1) a:hover{
     background: skyblue;
+    
 }
 section .smi li:nth-child(2) a:hover{
     background: rgb(255, 56, 222);
@@ -227,6 +241,7 @@ section .smi li a .fa{
 
 section .smi li a:hover .fa{
     color: #fff;
+    transform: scale(1.75) translateZ(50px);
 }
 
  section .navi{
