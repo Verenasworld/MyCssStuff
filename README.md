@@ -22,17 +22,18 @@ https://user-images.githubusercontent.com/51680972/123792429-e28b8380-d8e0-11eb-
 https://user-images.githubusercontent.com/51680972/123657042-bca6a600-d830-11eb-9fc7-65ba7e800a3f.mp4
 
 
-
-
-mix-blend-mode difference
-mix-blend-mode screen 
-
-add svg txt and animate with @keyframes line-anim
- media for responsive design ( CoktailPage) 
-
-
-
-
-# videotext
+learning css tricks and many more inspiriert from 
 tutorial with 
 https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog
+
+
+mix-blend-mode difference | 
+mix-blend-mode screen | 
+
+add svg txt and animate with @keyframes line-anim |
+@media for responsive design  and many more ...
+
+
+
+
+
